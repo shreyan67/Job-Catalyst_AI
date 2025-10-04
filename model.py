@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # ----------------- Load Model -----------------
-MODEL = SentenceTransformer("./paraphrase-MiniLM-L6-v2", device="cpu")
+MODEL =SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L6-v2", device="cpu")
 MODEL = torch.quantization.quantize_dynamic(MODEL, {torch.nn.Linear}, dtype=torch.qint8)
 
 

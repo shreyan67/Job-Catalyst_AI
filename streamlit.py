@@ -10,7 +10,7 @@ import os
 @st.cache_resource
 def load_model():
     """Load and quantize SentenceTransformer model once"""
-    model = SentenceTransformer("./paraphrase-MiniLM-L6-v2", device="cpu")
+    model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L6-v2", device="cpu")
     return torch.quantization.quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
 
 @st.cache_resource
