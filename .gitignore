@@ -1,0 +1,26 @@
+﻿# Virtual environments
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large ML/Data files
+*.csv
+*.npy
+*.pkl
+*.h5
+*.pt
+*.pth
+*.joblib
+*.zip
+*.tar
+*.gz
+*.npz
+
+# OS/IDE files
+.DS_Store
+.vscode/
