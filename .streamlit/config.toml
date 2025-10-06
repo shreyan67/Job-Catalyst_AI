@@ -1,4 +1,4 @@
-[general]
+echo "[general]
 browser.gatherUsageStats = false
 
 [server]
@@ -8,4 +8,4 @@ enableCORS = false
 enableXsrfProtection = false
 
 [logger]
-level = "info"
+level = \"info\"" > .streamlit/config.toml
