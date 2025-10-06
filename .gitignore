@@ -9,7 +9,7 @@ __pycache__/
 *.pyd
 
 # Large ML/Data files
-
+*.csv
 *.npy
 *.pkl
 *.h5
