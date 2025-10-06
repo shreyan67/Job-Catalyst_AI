@@ -37,7 +37,7 @@ class JobRecommendationSystem:
         else:
             print("⚠️ Local dataset not found, downloading from Hugging Face Hub...")
             dataset_path = hf_hub_download(
-                repo_id="shreyan67/Job-Catalyst_AI",  # <-- make sure this repo exists on your HF account
+                repo_id="datasets/shreyan67/Job-Catalyst_AI",  # <-- make sure this repo exists on your HF account
                 filename="JobsFE.csv"
             )
             self.jobs_df = pd.read_csv(dataset_path)
